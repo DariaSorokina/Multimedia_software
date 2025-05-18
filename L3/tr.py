@@ -226,7 +226,7 @@ if __name__ == "__main__":
     sf.write('test_signal_filtered_ellip.wav', filtered_signal, fs)
     
     # Обработка реального аудиофайла
-    audio_path = 'C:/Users/dsorokina/Desktop/Rabota/L2/br.mp3'
+    audio_path = 'C:/Users/dsorokina/Desktop/Rabota/Multimedia_software/Multimedia_software/L3/br.mp3'
     try:
         original_audio, fs_audio = librosa.load(audio_path, sr=None, mono=True)
         
@@ -243,7 +243,7 @@ if __name__ == "__main__":
         plot_filter_response(sos_audio, fs_audio)
         
         # Сохранение результатов
-        output_path = 'C:/Users/dsorokina/Desktop/Rabota/L2/filtered_audio_ellip.wav'
+        output_path = 'C:/Users/dsorokina/Desktop/Rabota//Multimedia_software/Multimedia_software/L3/filtered_audio_ellip.wav'
         sf.write(output_path, filtered_audio, fs_audio)
         print(f"Фильтрованный аудиофайл (эллиптический фильтр) сохранен по пути: {output_path}")
         
